@@ -3,7 +3,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-bus_t bus = {NULL, NULL, NULL, 0};
 
 /**
 * main - function for interpreting Monty code.
@@ -21,6 +20,7 @@ int main(int argc, char *argv[])
 	ssize_t read_line = 1;
 	stack_t *stack = NULL;
 	unsigned int counter = 0;
+	bus_t bus = {NULL, NULL, NULL, 0};
 
 	if (argc != 2)
 	{
